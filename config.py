@@ -10,7 +10,7 @@ class Config:
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
     MAIL_USERNAME = 'rodneygakuru@gmail.com'
-    MAIL_PASSWORD = 'rodgaks2000'
+    MAIL_PASSWORD = 'gaksrod1444'
 
 # class TestConfig(Config):
 #     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:rodgaks@localhost/mondayy'
