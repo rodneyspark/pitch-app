@@ -12,33 +12,33 @@ class Config:
     MAIL_USERNAME = 'rodneygakuru@gmail.com'
     MAIL_PASSWORD = 'gaksrod1444'
 
-# class TestConfig(Config):
-#     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:rodgaks@localhost/mondayy'
+class TestConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:rodgaks@localhost/mondayy'
     
-#     class ProdConfig(Config):
-#       SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-# class DevConfig(Config):
-#     DEBUG = True
-# config_options = {
-# 'development':DevConfig,
-# 'production':ProdConfig
-# }
+class ProdConfig(Config):
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+class DevConfig(Config):
+    DEBUG = True
+config_options = {
+'development':DevConfig,
+'production':ProdConfig
+}
 
 
 
-# class ProdConfig(Config):
-#     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+class ProdConfig(Config):
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 
-# class DevConfig(Config):
-#     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:rodgaks@localhost/mondayy'
-#     DEBUG = True
+class DevConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://user:rodgaks@localhost/mondayy'
+    DEBUG = True
 
-# config_options = {
-# 'development':DevConfig,
-# 'production':ProdConfig,
-# 'test':TestConfig
-# }
+config_options = {
+'development':DevConfig,
+'production':ProdConfig,
+'test':TestConfig
+}
 class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL") 
     
