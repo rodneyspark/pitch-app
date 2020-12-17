@@ -54,6 +54,8 @@ This  is a flask application that allows users to post one minute pitches and al
         $ chmod +x start.sh
         $ ./start.sh
 
+or just run python3.8 manage.py runserver and your good to go
+
 ## Testing the Application
 * To run the tests for the class files:
 
