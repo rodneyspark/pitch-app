@@ -31,7 +31,7 @@ This  is a flask application that allows users to post one minute pitches and al
 * python3.8
 * pip
 * virtualenv
-
+* migration
 
 ## Running the Application
 * Creating the virtual environment
